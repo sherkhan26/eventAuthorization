@@ -1,0 +1,12 @@
+export { Home } from "./Home";
+export { FullPost } from "./FullPost";
+export { AddPost } from "./AddPost";
+export { Registration } from "./Registration";
+export { Login } from "./Login";
+export { Main } from "./Main";
+export { Dance } from "./Dance";
+export { Live } from "./Live/Live";
+export { Voice } from  "./Voice";
+export { National } from "./National";
+export { Group } from "./Group";
+export { Instrument } from "./Instrument";

@@ -1,0 +1,18 @@
+.heading {
+  color: #fff;
+}
+
+.video {
+  height: 600px !important;
+}
+
+@media screen and (max-width: 700px) {
+  .heading {
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
+
+  .video {
+    height: 204px !important;
+  }
+}

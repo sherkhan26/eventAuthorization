@@ -1,0 +1,158 @@
+.root {
+  background-color: #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo {
+  color: #fff;
+  font-weight: 700;
+  line-height: 35px;
+  text-transform: uppercase;
+  letter-spacing: 0.15px;
+  border-radius: 5px;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.mainLink {
+  display: flex;
+}
+
+.home,
+.kap {
+  width: 180px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 20px;
+}
+
+.home {
+  background-image: url("../../image/logo.png");
+}
+
+.kap {
+  background-image: url("../../image/kap-logo.png");
+}
+
+.buttons {
+  button {
+    margin-left: 10px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.talentSelect {
+  width: 165px;
+}
+
+.selectTalent {
+  font-size: 14px;
+}
+
+.inputLabelTalent {
+  font-size: 14px !important;
+  color: #4361ee !important;
+}
+
+.menuItemLink {
+  text-decoration: none;
+  color: #4361ee;
+  font-size: 14px;
+}
+
+.MuiOutlinedInput {
+  border-color: #4361ee !important;
+}
+
+.formTalent {
+
+}
+
+.instagram {
+  position: absolute;
+  top: 5px;
+  right: 260px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.instagram svg g path {
+  transition: fill .3s ease;
+}
+
+.instagram:hover svg g path {
+  fill: #D13D2F;
+}
+
+.web {
+  position: absolute;
+  top: 5px;
+  right: 305px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.web svg {
+  transition: fill .3s ease;
+}
+
+.web:hover svg {
+  fill: #D13D2F;
+}
+
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .burger {
+    display: block;
+  }
+
+  .mainLink {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .home {
+    margin-right: 0;
+  }
+
+  .kap {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+    padding: 0;
+  }
+
+  .talentSelect,
+  .buttons {
+    display: none;
+  }
+
+  body {
+    padding-right: 0 !important;
+  }
+
+  .instagram {
+    top: 20%;
+    right: 18%;
+  }
+
+  .web {
+    top: 20%;
+    right: 30%;
+  }
+}

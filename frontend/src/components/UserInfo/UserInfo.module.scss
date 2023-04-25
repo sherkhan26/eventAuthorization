@@ -1,0 +1,44 @@
+.root {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid darkgray;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+.userName {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.userDetails,
+.userDetailsFirst{
+  display: flex;
+  flex-direction: column;
+}
+
+.userDetailsFirst {
+  margin-right: 15px;
+}
+
+.additional {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 700px) {
+  .root {
+    display: block;
+  }
+
+  .avatar {
+    display: none;
+  }
+}

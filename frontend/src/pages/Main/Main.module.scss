@@ -1,0 +1,266 @@
+.main {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.date,
+.title {
+  font-size: 60px;
+  margin: 0;
+}
+
+.text {
+  font-size: 30px;
+  margin: 20px 0 0;
+}
+
+.timer {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.day,
+.hour,
+.minute,
+.seconds {
+  font-size: 60px;
+  margin: 10px;
+
+
+  padding: 15px;
+  line-height: 50px;
+
+
+  --border-width: 3px;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Lato, sans-serif;
+  text-transform: uppercase;
+  border-radius: var(--border-width);
+  z-index: 1;
+}
+
+.day::after,
+.hour::after,
+.minute::after,
+.seconds::after {
+  position: absolute;
+  content: "";
+  top: calc(-1 * var(--border-width));
+  left: calc(-1 * var(--border-width));
+  z-index: -1;
+  width: calc(100% + var(--border-width) * 2);
+  height: calc(100% + var(--border-width) * 2);
+  background: linear-gradient(
+      60deg,
+      hsl(224, 85%, 66%),
+      hsl(269, 85%, 66%),
+      hsl(314, 85%, 66%),
+      hsl(359, 85%, 66%),
+      hsl(44, 85%, 66%),
+      /*hsl(89, 85%, 66%),*/
+      /*hsl(134, 85%, 66%),*/
+      hsl(179, 85%, 66%)
+  );
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  border-radius: calc(2 * var(--border-width));
+  animation: moveGradient 4s alternate infinite;
+}
+
+.kidsSing {
+  position: absolute;
+  height: 300px;
+  top: 30%;
+  right: -10%;
+}
+
+.about {
+  display: flex;
+  border-top: 1px solid #fff;
+  padding: 30px 0;
+}
+
+.aboutImg {
+  flex-basis: 50%;
+  position: relative;
+}
+
+.slideImg1,
+.slideImg2 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.slideImg1 {
+  background-image: url("../../image/about/kids-1.jpg");
+}
+
+.slideImg2 {
+  background-image: url("../../image/about/kids-2.jpg");
+}
+
+.aboutBtnBack,
+.aboutBtnNext {
+  position: absolute;
+  top: 45%;
+  border: 1px solid #224084;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  transition: background-color .3s ease;
+}
+
+.aboutBtnBack:hover,
+.aboutBtnNext:hover {
+  background-color: #E79B24;
+}
+
+.aboutBtnBack {
+  left: 5px;
+  transform: rotate(180deg);
+}
+
+.aboutBtnNext {
+  right: 5px;
+}
+
+.aboutBtnSvg {
+  margin: 4px 0 0 4px;
+}
+
+.aboutContent {
+  flex-basis: 50%;
+  padding-left: 30px;
+  color: #fff;
+}
+
+.aboutContentHeading {
+  margin-top: 0;
+  font-size: 30px;
+}
+
+.aboutContentDescription {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.organizer {
+  border-top: 1px solid #fff;
+  padding: 30px 0 0;
+  color: #fff;
+  text-align: center;
+}
+
+.organizerHeading {
+  margin: 0;
+  font-size: 30px;
+}
+
+.organizerList {
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.organizerItem {
+
+}
+
+.organizerText {
+  font-size: 20px;
+}
+
+.organizerImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.organizerName {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.organizerLink {
+  position: relative;
+  padding-left: 30px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  transition: color .3s ease;
+}
+
+.organizerLink:hover {
+  color: #E79B24;
+}
+
+.organizerSvg {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .kidsSing {
+    display: none;
+  }
+
+  .date,
+  .title {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 20px;
+    margin: 10px 0 0;
+  }
+
+  .day,
+  .hour,
+  .minute,
+  .seconds {
+    font-size: 25px;
+    margin: 10px;
+    padding: 15px;
+    line-height: 25px;
+  }
+
+  .aboutImg {
+    display: none;
+  }
+
+  .aboutContent {
+    flex-basis: 100%;
+    padding-left: 0;
+  }
+
+  .aboutContentHeading,
+  .organizerHeading {
+    font-size: 20px;
+  }
+
+  .aboutContentDescription,
+  .organizerText,
+  .organizerName,
+  .organizerLink {
+    font-size: 15px;
+  }
+
+  .organizerList {
+    margin: 0;
+  }
+}
+

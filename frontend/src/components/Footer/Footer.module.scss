@@ -1,0 +1,33 @@
+.root {
+  background-color: #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.inner {
+  text-align: center;
+}
+
+.description {
+  font-size: 24px;
+}
+
+.logoLink {
+  color: #224084;
+  text-decoration: none;
+  transition: color .3s ease;
+}
+
+.logoLink:hover {
+  color: #E79B24
+}
+
+@media screen and (max-width: 700px) {
+  .root {
+    padding: 0;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+}
